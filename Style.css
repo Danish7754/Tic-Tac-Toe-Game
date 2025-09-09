@@ -1,0 +1,152 @@
+.container {
+  /* background: linear-gradient(135deg, #89f7fe, #66a6ff); */
+  /* width: 100vw; */
+  background-image: url("bg.webp");
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin: 0;
+  line-height: 60px;
+  color: white;
+  /* vertically center text */
+}
+
+#title:hover {
+  font-size: 2.0em;
+  font-weight: 500;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  color: black;
+  cursor: pointer;
+}
+
+#msg {
+  position: relative;
+  top: -30px;
+  font-size: larger;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+}
+
+#turn {
+  position: relative;
+  right: -400px;
+  top: -300px;
+  font-size: 200%;
+  padding: 10px;
+  /* border: 2px solid black; */
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.img {
+
+  position: absolute;
+  left: 10px;
+  /* distance from left edge */
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60px;
+
+}
+
+.img1 {
+  position: absolute;
+  right: 10px;
+  /* distance from left edge */
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60px;
+
+}
+
+.nav {
+  background-image: url("navimg.jpg");
+  position: relative;
+  padding: 10px;
+  height: 60px;
+  /* enough space for logo + text */
+  background-color: transparent;
+}
+
+.GameBoard {
+  /* background-color:cadetblue; */
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(3, 100px);
+  /* gap: 5px; */
+  position: relative;
+  top: -30px;
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 32px rgba(77, 8, 109, 0.938)
+}
+
+.cell {
+  color: white;
+  font-weight: bold;
+  background-color: palevioletred;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+
+
+}
+
+.cell:hover {
+  background-color: rgba(255, 255, 255, )0.25;
+  transform: scale(1.05);
+}
+
+.mybtn {
+  border: 2px solid black;
+  /* border: none; */
+  position: relative;
+  top: -30px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  color: black;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.win {
+  background-color: blueviolet;
+
+  animation: flip 0.9s ease-in-out;
+}
+
+.win:hover {
+  background-color: rgb(82, 0, 158);
+}
+
+@keyframes flip {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
