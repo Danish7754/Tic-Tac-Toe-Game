@@ -51,7 +51,7 @@ Click Reset to start a new match.
 
 Clone the repository:
 
-git clone https://github.com/your-username/Tic-Tac-Toe-Game.git
+git clone https://github.com/Danish7754/Tic-Tac-Toe-Game.git
 
 
 Open the project folder.
