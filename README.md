@@ -65,9 +65,6 @@ Add AI opponent (play against the computer)
 Keep scoreboard for multiple rounds
 
 Add sound effects and animations
-👨‍💻 Author
 
+👨‍💻 Author
 Developed by [Danish Iqbal]
-👨‍💻 Author
-
-Developed by [Your Name]
