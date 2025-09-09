@@ -19,6 +19,8 @@ This project allows two players to play Tic Tac Toe on the same computer.
 🖼️ UI Preview
 
 Here’s a preview of the game:
+
+
 <img src="Image1.png" alt="Tic Tac Toe Start" width="400">
 <img src="Image2.png" alt="Tic Tac Toe Start" width="400">
 
